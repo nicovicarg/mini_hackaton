@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.secciones {
+  color: white;
+  font-size: 30px;
+  width: 80%;
+  height: 100px;
+  background-color: brown;
+  margin: 0px auto;
+  
+}
+
+#entradasTapeos {
+  grid-row: 1/2;
+}
+
+#platosPrincipales {
+  grid-row: 2/3;
+}
+
+#minutas {
+  grid-row: 3/4;
+}
+
+#ensaladas {
+  grid-row:4/5;
+}
+
+#menuInfantil {
+  grid-row:5/6;
+}
+
+#postres {
+  grid-row: 6/7;
+}

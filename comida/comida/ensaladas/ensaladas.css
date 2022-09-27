@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+.ensaladas {
+  width: 90%;
+  height: 200px;
+  background-color: gray;
+  color: white;
+  margin: 30px auto;
+}
+#ensaladaMartina {
+  background-image: url(./img/ensaladaMartina.jpg);
+  background-size: cover;
+}
+#ensaladaMatilde {
+  background-image: url(./img/ensaladaMatilde.jpg);
+  background-size: cover;
+}
+#ensaladaCapresse {
+  background-image: url(./img/ensaladaCapresse.jpg);
+  background-size: cover;
+}
+#ensaladaCesar {
+  background-image: url(./img/ensaladaCesar.jpg);
+  background-size: cover;
+}

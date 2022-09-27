@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+.postres {
+  width: 90%;
+  height: 200px;
+  background-color: gray;
+  color: white;
+  margin: 30px auto;
+}
+
+#donPedro {
+  background-image: url(./img/donPedro.jpg);
+  background-size: cover;
+}
+#perasMalbec {
+  background-image: url(./img/perasMalbec.jpg);
+  background-size: cover;
+}
+#helado {
+  background-image: url(./img/helado.jpg);
+  background-size: cover;
+}
+#cheescakeNutella {
+  background-image: url(./img/cheescakeNutela.jpg);
+  background-size: cover;
+}
+#tiramisuBaileys {
+  background-image: url(./img/tiramisuBaileys.jpg);
+  background-size: cover;
+}
+#mousseMaracuya {
+  background-image: url(./img/mousseMaracuya.jpg);
+  background-size: cover;
+}
+#flan {
+  background-image: url(./img/flan.jpg);
+  background-size: cover;
+}
+#brownieHelado {
+  background-image: url(./img/brownie.jpg);
+  background-size: cover;
+}

@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+.entradasTapeos {
+  width: 90%;
+  height: 200px;
+  background-color: gray;
+  color: white;
+  margin: 30px auto;
+}
+
+#tortillaPortugal {
+  background-image: url(./img/tortillaPortugal.jpg);
+  background-size: cover;
+}

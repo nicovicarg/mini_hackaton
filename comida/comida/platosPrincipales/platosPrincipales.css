@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+.platosPrincipales {
+  width: 90%;
+  height: 200px;
+  background-color: gray;
+  
+  color: white;
+  border-radius: 32px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#clasicaPastora {
+  background-image: url(./img/pastora.jpg);
+  background-size: cover;
+}
+#carreDeCerdo {
+  background-image: url(./img/carreDeCerdo.jpg);
+  background-size: cover;
+}
+#polloAlAjillo{
+  background-image: url(./img/polloAlajillo.jpg);
+  background-size: cover;
+}
+#cerdoRiojana {
+  background-image: url(./img/cerdoRiojana.jpg);
+  background-size: cover;
+}
+h2 {
+  text-shadow:5px 5px 5px black;
+}
+h3 {
+  text-shadow:10px 10px 10px black;
+}
+#polloVerdeo {
+  background-image: url(./img/polloVerdeo.jpg);
+  background-size: cover;
+  
+}
+#terneraProvenzal {
+  background-image: url(./img/terneraProvenzal.jpg);
+  background-size: cover;
+}
+#bondiolaCerveza {
+  background-image: url(./img/bondiolaCerveza.jpg);
+  background-size: cover;
+}
+#roastCriolla {
+  background-image: url(./img/roastCriolla.jpg);
+  background-size: cover;
+}
