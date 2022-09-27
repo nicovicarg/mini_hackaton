@@ -3,7 +3,36 @@
   margin: 0px;
   box-sizing: border-box;
 }
+#sumatoria {
+  width: 80px;
+  margin: 400px 150px;
+  border: 1px solid red;
+  font-size: 30px;
+}
+#barra {
+  width: 100vw;
+  float: right;
+  margin-bottom: 10px;
+  border: 1px solid green;
+}
+#icon {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#contador {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-right: 5px;
 
+  float: right;
+  padding: auto;
+  text-align: center;
+}
 main {
   width: 100vw;
   height: 100vh;
@@ -12,9 +41,7 @@ main {
   width: 90%;
   height: 200px;
   background-color: gray;
-  
   color: white;
-  border-radius: 32px;
   margin: 30px auto;
   display: flex;
   flex-direction: column;
@@ -38,10 +65,17 @@ main {
   background-image: url(./img/cerdoRiojana.jpg);
   background-size: cover;
 }
+p {
+  text-shadow:5px 5px 5px black;
+  text-align: center;
+}
 h2 {
   text-shadow:5px 5px 5px black;
+  text-align: center;
+
 }
 h3 {
+  text-align: center;
   text-shadow:10px 10px 10px black;
 }
 #polloVerdeo {
@@ -60,4 +94,24 @@ h3 {
 #roastCriolla {
   background-image: url(./img/roastCriolla.jpg);
   background-size: cover;
+}
+
+select {
+  background-color: gray;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow:5px 5px 5px black;
+}
+#pc {
+  display: flex;
+
+}
+#checked {
+  margin-right: -50px;
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
 }
