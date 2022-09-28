@@ -2,7 +2,9 @@
 
 const formulario = document.getElementById("formulario");
 const carta = document.getElementById("carta");
-let array = [];
+let array = []
+
+
 
 
 
@@ -20,21 +22,21 @@ const crearProducto = (nombre, descripcion, precio) => {
   return objeto;
 }
 
-const guardarProducto = (objeto) => {
-  localStorage.setItem("menu", JSON.stringify(array));
+const guardarProducto = () => {
+  localStorage.setItem("postres", JSON.stringify(array));
   mostrarProductos();
 }
 
 const mostrarProductos = () => {
   carta.innerHTML = "";
 
-  array = JSON.parse(localStorage.getItem("menu"))
+  array = JSON.parse(localStorage.getItem("postres"))
   if(array === null){
     array = [];
   } else {
     array.forEach(element => {
       carta.innerHTML += `<div class="container" id"${element.nombre}">
-      <h2 id=asd">${element.nombre}</h2>
+      <h2 id=nombre">${element.nombre}</h2>
       <p class="descripcion">${element.descripcion}</p>
       <h3 class="precio">${element.precio}</h3><img src="./cruz.png" alt="" class="close-icon"id=${element.nombre}">
     </div>`
@@ -44,8 +46,9 @@ const mostrarProductos = () => {
 
 const eliminarProducto = (nombre) =>{
   let indexArray; 
+
   array.forEach((element, index)=> {
-    if(element.nombre === nombre){
+    if(element.nombre == nombre){
       indexArray= index;
     }
 
@@ -71,11 +74,12 @@ formulario.addEventListener("submit", (e)=>{
   
 });
 
-document.addEventListener("DOMContentLoaded", mostrarProductos)
+document.addEventListener("DOMContentLoaded", mostrarProductos())
 
 carta.addEventListener("click", (e)=> {
   e.preventDefault();
 
   let nombre = e.path[1].childNodes[1].innerHTML;
+  
   eliminarProducto(nombre);
 })
