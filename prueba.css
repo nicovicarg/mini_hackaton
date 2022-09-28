@@ -1,0 +1,22 @@
+.container {
+width: 80%;
+height: 200px;
+margin: 20px 20px auto;
+background-color: gray;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.close-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 12px;
+}
+
+#div-precio {
+  display: flex;
+  flex-direction: column;
+}
