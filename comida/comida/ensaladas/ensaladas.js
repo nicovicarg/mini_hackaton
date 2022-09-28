@@ -1,4 +1,4 @@
-let categoria = "principales";
+let categoria = "ensaladas";
 let array = [];
 
 const mostrarProductos = () => {

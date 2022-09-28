@@ -1,4 +1,4 @@
-let categoria = "principales";
+let categoria = "minutas";
 let array = [];
 
 const mostrarProductos = () => {

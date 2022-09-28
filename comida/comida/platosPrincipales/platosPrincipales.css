@@ -1,118 +1,22 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-#sumatoria {
-  width: 80px;
-  margin: 400px 150px;
-  border: 1px solid red;
-  font-size: 30px;
-}
-#barra {
-  width: 100vw;
-  float: right;
-  margin-bottom: 10px;
-  border: 1px solid green;
-}
-#icon {
-  width: 30px;
-  height: 30px;
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-#contador {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-top: 5px;
-  margin-right: 5px;
-
-  float: right;
-  padding: auto;
-  text-align: center;
-}
-main {
-  width: 100vw;
-  height: 100vh;
-}
-.platosPrincipales {
-  width: 90%;
+.container {
+  width: 80%;
   height: 200px;
+  margin: 20px 20px auto;
   background-color: gray;
   color: white;
-  margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-#clasicaPastora {
-  background-image: url(./img/pastora.jpg);
-  background-size: cover;
-}
-#carreDeCerdo {
-  background-image: url(./img/carreDeCerdo.jpg);
-  background-size: cover;
-}
-#polloAlAjillo{
-  background-image: url(./img/polloAlajillo.jpg);
-  background-size: cover;
-}
-#cerdoRiojana {
-  background-image: url(./img/cerdoRiojana.jpg);
-  background-size: cover;
-}
-p {
-  text-shadow:5px 5px 5px black;
-  text-align: center;
-}
-h2 {
-  text-shadow:5px 5px 5px black;
-  text-align: center;
-
-}
-h3 {
-  text-align: center;
-  text-shadow:10px 10px 10px black;
-}
-#polloVerdeo {
-  background-image: url(./img/polloVerdeo.jpg);
-  background-size: cover;
+  }
+  .close-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 12px;
+  }
   
-}
-#terneraProvenzal {
-  background-image: url(./img/terneraProvenzal.jpg);
-  background-size: cover;
-}
-#bondiolaCerveza {
-  background-image: url(./img/bondiolaCerveza.jpg);
-  background-size: cover;
-}
-#roastCriolla {
-  background-image: url(./img/roastCriolla.jpg);
-  background-size: cover;
-}
-
-select {
-  background-color: gray;
-  border: none;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
-  text-shadow:5px 5px 5px black;
-}
-#pc {
-  display: flex;
-
-}
-#checked {
-  margin-right: -50px;
-  margin-left: 50px;
-  width: 30px;
-  height: 30px;
-  
-}
+  #div-precio {
+    display: flex;
+    flex-direction: column;
+  }
