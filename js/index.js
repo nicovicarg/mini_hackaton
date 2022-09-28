@@ -12,7 +12,7 @@ function validate(){
     window.location.href= "./menu.html";
   }else if(usuario === "admin" && contraseña === "admin"){
     event.preventDefault();
-    window.location.href= "./menu.html";
+    window.location.href= "./prueba.html";
   }
   if(document.location.href === "./menu.html"){
     let mensaje = "logueado"
