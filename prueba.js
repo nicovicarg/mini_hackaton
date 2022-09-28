@@ -2,9 +2,10 @@
 
 const formulario = document.getElementById("formulario");
 const carta = document.getElementById("carta");
+let contenedor;
 let array = []
 
-let categoria = "postres";
+let categoria = "ensaladas";
 
 
 
@@ -37,10 +38,10 @@ const mostrarProductos = () => {
   else {
     array.forEach(element => {
       if(element.categoria === categoria){
-        carta.innerHTML += `<div class="container" id"${element.nombre}">
+        carta.innerHTML += `<div class="container" id="${element.nombre}">
         <h2 id=nombre">${element.nombre}</h2>
         <p class="descripcion">${element.descripcion}</p>
-        <h3 class="precio">${element.precio}</h3><img src="./img/cruz.png" alt="" class="close-icon"id=${element.nombre}">
+        <h3 class="precio">${element.precio}</h3><img src="./cruz.png" alt="" class="close-icon"id=${element.nombre}">
         </div>`
       }
       
@@ -68,8 +69,8 @@ formulario.addEventListener("submit", (e)=>{
   let nombre = document.getElementById("nombre").value;
   let descripcion = document.getElementById("descripcion").value;
   let precio = document.getElementById("precio").value;
-  let categoria = document.getElementById("select").value
-
+  let categoria = document.getElementById("select").value;
+  
   crearProducto(nombre, descripcion, precio, categoria);
   guardarProducto();
 
@@ -87,4 +88,5 @@ carta.addEventListener("click", (e)=> {
   eliminarProducto(nombre);
   
 })
+
 
