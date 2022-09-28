@@ -12,12 +12,13 @@ let categoria = "ensaladas";
 
 //Funciones
 
-const crearProducto = (nombre, descripcion, precio, categoria) => {
+const crearProducto = (nombre, descripcion, precio, categoria, imagen) => {
   let objeto = {
     nombre: nombre,
     descripcion: descripcion,
     precio: precio,
-    categoria: categoria
+    categoria: categoria,
+    imagen: imagen
   };
   array.push(objeto);
   return objeto
@@ -38,7 +39,7 @@ const mostrarProductos = () => {
   else {
     array.forEach(element => {
       if(element.categoria === categoria){
-        carta.innerHTML += `<div class="container" id="${element.nombre}">
+        carta.innerHTML += `<div class="container" style="background-image:url('./carpetadeprueba/${element.imagen}'); background-Size: contain;" id="${element.nombre}">
         <h2 id=nombre">${element.nombre}</h2>
         <p class="descripcion">${element.descripcion}</p>
         <h3 class="precio">${element.precio}</h3><img src="./cruz.png" alt="" class="close-icon"id=${element.nombre}">
@@ -70,8 +71,9 @@ formulario.addEventListener("submit", (e)=>{
   let descripcion = document.getElementById("descripcion").value;
   let precio = document.getElementById("precio").value;
   let categoria = document.getElementById("select").value;
-  
-  crearProducto(nombre, descripcion, precio, categoria);
+  let imagen = document.getElementById("imagen").files[0].name;
+
+  crearProducto(nombre, descripcion, precio, categoria, imagen);
   guardarProducto();
 
   formulario.reset()
